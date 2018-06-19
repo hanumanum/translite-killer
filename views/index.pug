@@ -1,5 +1,12 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+//- index.pug
+doctype html
+html
+  include includes/head.pug
+  body
+  div(class="container")
+    include includes/nav.pug
+    div(class="jumbotron")
+      h1 Translite Killer
+      p(class="lead") Welcome to translite killer
+    include includes/modal-login.pug
+    include includes/foot.pug
